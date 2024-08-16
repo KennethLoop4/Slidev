@@ -108,5 +108,10 @@ Power by Will Ran
 </div>
 
 
+---
+layout: center
+class: "text-center"
+---
 
+# **Thank You**
 
