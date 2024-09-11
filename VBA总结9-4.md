@@ -150,180 +150,42 @@
 ### 数学函数  
 
 
-#### ABS  
-##### 返回数字的绝对值  
-##### ABS(number)
+| 函数名称  | 描述                               | 语法                        |
+| --------- | ---------------------------------- | --------------------------- |
+| Abs       | 返回一个数的绝对值                 | Abs(number)                 |
+| Int       | 返回小于或等于指定数字的最接近整数 | Int(number)                 |
+| Sqr       | 返回一个数的平方根                 | Sqr(number)                 |
+| Round     | 返回一个数字四舍五入后的值         | Round(number, [num_digits]) |
+| Rnd       | 返回一个介于0和1之间的随机数       | Rnd()                       |
+| Randomize | 初始化随机数生成器                 | Randomize                   |
 
+### 转换函数
 
-
-
-#### INT  
-##### 返回数字向下取整后的值  
-##### INT(number)
-
-
-
-
-#### ROUND  
-##### 返回数字四舍五入后的值  
-##### ROUND(number, num_digits)
-
-
-
-
-#### ROUNDDOWN  
-##### 返回数字向下取整后的值  
-##### ROUNDDOWN(number, num_digits)
-
-
-
-
-#### ROUNDUP  
-##### 返回数字向上取整后的值  
-##### ROUNDUP(number, num_digits)
-
-
-
-
-#### TRUNC  
-##### 返回数字截断后的值  
-##### TRUNC(number, [num_digits])
-
-
-
-
-#### SQRT  
-##### 返回数字的平方根  
-##### SQRT(number)
-
-
-
-
-#### POWER  
-##### 返回一个数的指定次幂  
-##### POWER(number, power)
-
-
-
-
-#### RAND  
-##### 返回一个介于0和1之间的随机数  
-##### RAND()
-
-
-
-
-#### RANDBETWEEN  
-##### 返回一个介于指定两个数之间的随机整数  
-##### RANDBETWEEN(bottom, top)
-
+| 函数名称 | 描述                       | 语法              |
+| -------- | -------------------------- | ----------------- |
+| CInt     | 将表达式转换为整数类型     | CInt(expression)  |
+| CLng     | 将表达式转换为长整型       | CLng(expression)  |
+| CStr     | 将表达式转换为字符串类型   | CStr(expression)  |
+| CDbl     | 将表达式转换为双精度浮点数 | CDbl(expression)  |
+| CDate    | 将表达式转换为日期类型     | CDate(expression) |
 
 
 
 ### 字符串函数  
 
 
-#### LEFT  
-##### 返回字符串最左边的字符  
-##### LEFT(text, [num_chars])
-
-
-
-
-#### RIGHT  
-##### 返回字符串最右边的字符  
-##### RIGHT(text, [num_chars])
-
-
-
-
-#### MID  
-##### 返回字符串中间的字符  
-##### MID(text, start_num, num_chars)
-
-
-
-
-#### LEN  
-##### 返回字符串的长度  
-##### LEN(text)
-
-
-
-
-#### LOWER  
-##### 将字符串转换为小写  
-##### LOWER(text)
-
-
-
-
-#### UPPER  
-##### 将字符串转换为大写  
-##### UPPER(text)
-
-
-
-
-#### REPLACE  
-##### 替换字符串中的字符  
-##### REPLACE(old_text, start_num, num_chars, new_text)
-
-
-
-
-#### SUBSTITUTE  
-##### 替换字符串中的字符  
-##### SUBSTITUTE(text, old_text, new_text, [instance_num])
-
-
-
-
-#### CONCATENATE  
-##### 连接字符串  
-##### CONCATENATE(text1, text2, ...)
-
-
-
-
-#### CONCAT  
-##### 连接字符串  
-##### CONCAT(text1, text2, ...)
-
-
-
-
-#### TRIM  
-##### 删除字符串两端的空格  
-##### TRIM(text)
-
-
-
-
-#### REPT  
-##### 重复字符串  
-##### REPT(text, number_times)
-
-
-
-
-#### FIND  
-##### 查找字符串的位置  
-##### FIND(find_text, within_text, [start_num])
-
-
-
-
-#### SEARCH  
-##### 查找字符串的位置  
-##### SEARCH(find_text, within_text, [start_num])
-
-
-
-
-#### EXACT  
-##### 比较两个字符串是否完全相同  
-##### EXACT(text1, text2)
+| 函数名称 | 描述                             | 语法                                                        |
+| -------- | -------------------------------- | ----------------------------------------------------------- |
+| Len      | 返回字符串中字符的总数           | Len(string)                                                 |
+| Mid      | 从指定位置开始提取字符串的一部分 | Mid(string, start, [length])                                |
+| Left     | 返回字符串左侧的指定数量的字符   | Left(string, length)                                        |
+| Right    | 返回字符串右侧的指定数量的字符   | Right(string, length)                                       |
+| Replace  | 替换字符串中的部分内容           | Replace(string, find, replace, [start], [count], [compare]) |
+| UCase    | 将字符串转换为大写               | UCase(string)                                               |
+| LCase    | 将字符串转换为小写               | LCase(string)                                               |
+| Trim     | 删除字符串开头和结尾的空格       | Trim(string)                                                |
+| RTrim    | 删除字符串结尾的空格             | RTrim(string)                                               |
+| LTrim    | 删除字符串开头的空格             | LTrim(string)                                               |
 
 
 
@@ -331,49 +193,13 @@
 ### 类型判断函数  
 
 
-#### ISNUMBER  
-##### 判断一个值是否为数字  
-##### ISNUMBER(value)
+| 函数名称  | 描述                   | 语法             |
+| --------- | ---------------------- | ---------------- |
+| ISNUMBER  | 判断一个值是否为数字   | ISNUMBER(value)  |
+| ISEMPTY   | 判断一个值是否为空     | ISEMPTY(value)   |
+| ISTEXT    | 判断一个值是否为文本   | ISTEXT(value)    |
+| ISNONTEXT | 判断一个值是否不是文本 | ISNONTEXT(value) |
 
-
-
-
-#### ISBLANK  
-##### 判断一个值是否为空  
-##### ISBLANK(value)
-
-
-
-
-#### ISERROR  
-##### 判断一个值是否为错误  
-##### ISERROR(value)
-
-
-
-
-#### ISLOGICAL  
-##### 判断一个值是否为逻辑值  
-##### ISLOGICAL(value)
-
-
-
-
-#### ISTEXT  
-##### 判断一个值是否为文本  
-##### ISTEXT(value)
-
-
-
-
-#### ISNONTEXT  
-##### 判断一个值是否不是文本  
-##### ISNONTEXT(value)
-
-
-#### ISNONTEXT  
-##### 判断一个值是否为空  
-##### ISEMPTY(value)
 
 
 
@@ -385,125 +211,31 @@
 ### 时间日期函数  
 
 
-#### NOW  
-##### 返回当前的日期和时间  
-##### NOW()
+| 函数名称    | 描述                         | 语法                                          |
+| ----------- | ---------------------------- | --------------------------------------------- |
+| NOW         | 返回当前的日期和时间         | NOW()                                         |
+| TODAY       | 返回当前的日期               | TODAY()                                       |
+| DATE        | 返回当前的日期               | DATE()                                        |
+| TIME        | 返回当前的时间               | TIME()                                        |
+| YEAR        | 返回日期中的年份             | YEAR(date)                                    |
+| MONTH       | 返回日期中的月份             | MONTH(date)                                   |
+| DAY         | 返回日期中的天数             | DAY(date)                                     |
+| HOUR        | 返回时间中的小时             | HOUR(time)                                    |
+| MINUTE      | 返回时间中的分钟             | MINUTE(time)                                  |
+| SECOND      | 返回时间中的秒               | SECOND(time)                                  |
+| DATEADD     | 在指定日期上添加一个时间间隔 | DATEADD(interval, number, date)               |
+| DATEDIFF    | 返回两个日期之间的时间间隔   | DATEDIFF(interval, date1, date2)              |
+| DATEPART    | 返回指定日期的指定部分       | DATEPART(interval, date)                      |
+| FORMAT      | 格式化日期或时间             | FORMAT(expression, format)                    |
+| WEEKDAY     | 返回日期是星期几             | WEEKDAY(date, [firstdayofweek])               |
+| WORKDAY     | 返回指定日期之后的工作日     | WORKDAY(start_date, days, [holidays])         |
+| NETWORKDAYS | 返回两个日期之间的工作日数量 | NETWORKDAYS(start_date, end_date, [holidays]) |
+
+### 其他函数
+
+| 函数名称 | 描述                                     | 语法                                                      |
+| -------- | ---------------------------------------- | --------------------------------------------------------- |
+| MsgBox   | 显示一个消息框，向用户提供信息或请求输入 | MsgBox(prompt, [buttons], [title], [helpfile], [context]) |
+| InputBox | 显示一个输入框，提示用户输入信息         | InputBox(prompt, [title], [default], [xpos], [ypos])      |
+InStr	|返回一个字符串在另一个字符串中首次出现的位置	|InStr([start], string1, string2, [compare])
 
-
-
-
-#### TODAY  
-##### 返回当前的日期  
-##### TODAY()
-
-
-
-
-#### DATE  
-##### 返回当前的日期  
-##### DATE()
-
-
-
-
-#### TIME  
-##### 返回当前的时间  
-##### TIME()
-
-
-
-
-#### YEAR  
-##### 返回日期中的年份  
-##### YEAR(date)
-
-
-
-
-#### MONTH  
-##### 返回日期中的月份  
-##### MONTH(date)
-
-
-
-
-#### DAY  
-##### 返回日期中的天数  
-##### DAY(date)
-
-
-
-
-#### HOUR  
-##### 返回时间中的小时  
-##### HOUR(time)
-
-
-
-
-#### MINUTE  
-##### 返回时间中的分钟  
-##### MINUTE(time)
-
-
-
-
-#### SECOND  
-##### 返回时间中的秒  
-##### SECOND(time)
-
-
-
-
-#### DATEADD  
-##### 在指定日期上添加一个时间间隔  
-##### DATEADD(interval, number, date)
-
-
-
-
-#### DATEDIFF  
-##### 返回两个日期之间的时间间隔  
-##### DATEDIFF(interval, date1, date2)
-
-
-
-
-#### DATEPART  
-##### 返回指定日期的指定部分  
-##### DATEPART(interval, date)
-
-
-
-
-#### FORMAT  
-##### 格式化日期或时间  
-##### FORMAT(expression, format)
-
-
-
-
-#### WEEKDAY  
-##### 返回日期是星期几  
-##### WEEKDAY(date, [firstdayofweek])
-
-
-
-
-#### EOMONTH  
-##### 返回指定日期所在月份的最后一天  
-##### EOMONTH(start_date, months)
-
-
-
-
-#### WORKDAY  
-##### 返回指定日期之后的工作日  
-##### WORKDAY(start_date, days, [holidays])
-
-
-
-
-#### NETWORKDAYS  
-##### 返回两个日期之间的工作日数量  
-##### NETWORKDAYS(start_date, end_date, [holidays])
